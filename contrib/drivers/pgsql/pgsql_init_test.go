@@ -26,8 +26,8 @@ const (
 	SchemaName  = "test"
 	TableName   = "test1"
 	TestSchema1 = "test2"
-	TestDbUser  = "root"
-	TestDbPass  = "12345678"
+	TestDbUser  = "postgres"
+	TestDbPass  = "default"
 	CreateTime  = "2018-10-24 10:00:00"
 )
 
