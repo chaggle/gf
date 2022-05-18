@@ -26,8 +26,8 @@ const (
 	SchemaName  = "test"
 	TableName   = "test1"
 	TestSchema1 = "test2"
-	TestDbUser  = "postgres"
-	TestDbPass  = "default"
+	TestDbUser  = "root"
+	TestDbPass  = "12345678"
 	CreateTime  = "2018-10-24 10:00:00"
 )
 
@@ -83,8 +83,8 @@ func createTableWithDb(db gdb.DB, table ...string) (name string) {
 	if _, err := db.Exec(ctx, fmt.Sprintf(`
 		CREATE TABLE %s (
 		   id bigint  NOT NULL,
-		   passport varchar(45),
-		   password varchar(32) NOT NULL,
+		   passport varchar(45) NULL,
+		   password varchar(32) NULL,
 		   nickname varchar(45) NULL,
 		   create_time timestamp NULL,
 		   PRIMARY KEY (id)
