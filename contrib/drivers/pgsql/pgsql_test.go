@@ -9,7 +9,6 @@ package pgsql_test
 import (
 	"fmt"
 	"github.com/gogf/gf/v2/database/gdb"
-	"github.com/gogf/gf/v2/os/gtime"
 	"testing"
 
 	"github.com/gogf/gf/contrib/drivers/pgsql/v2"
@@ -77,7 +76,7 @@ func Test_DB_Upadte_KeyFieldNameMapping(t *testing.T) {
 	})
 }
 
-func Test_Model_Insert(t *testing.T) {
+/*func Test_Model_Insert(t *testing.T) {
 	table := createTable()
 	defer dropTable(table)
 
@@ -176,3 +175,4 @@ func Test_DB_Save(t *testing.T) {
 		t.Assert(one["create_time"].GTime().String(), timeStr)
 	})
 }
+*/

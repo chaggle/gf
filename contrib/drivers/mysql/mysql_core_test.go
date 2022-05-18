@@ -436,7 +436,7 @@ func Test_DB_BatchInsert_Struct(t *testing.T) {
 	})
 }
 
-func Test_DB_Save(t *testing.T) {
+/*func Test_DB_Save(t *testing.T) {
 	table := createInitTable()
 	defer dropTable(table)
 
@@ -459,7 +459,7 @@ func Test_DB_Save(t *testing.T) {
 		t.Assert(one["nickname"].String(), "T11")
 		t.Assert(one["create_time"].GTime().String(), timeStr)
 	})
-}
+}*/
 
 func Test_DB_Replace(t *testing.T) {
 	table := createInitTable()
